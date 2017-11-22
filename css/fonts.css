@@ -1,0 +1,55 @@
+
+@font-face {
+  font-family: 'gotham_mediumregular';
+  src: url('../fonts/GothamMedium/8573-webfont.woff2') format('woff2'),
+       url('../fonts/GothamMedium/8573-webfont.woff') format('woff'),
+       url('../fonts/GothamMedium/8573-webfont.ttf') format('truetype'),
+       url('../fonts/GothamMedium/8573-webfont.svg#gotham_mediumregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotobold_condensed';
+  src: url('../fonts/Roboto-Bold/3956-webfont.woff2') format('woff2'),
+       url('../fonts/Roboto-Bold/3956-webfont.woff') format('woff'),
+       url('../fonts/Roboto-Bold/3956-webfont.ttf') format('truetype'),
+       url('../fonts/Roboto-Bold/3956-webfont.svg#robotobold_condensed') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotoregular';
+  src: url('../fonts/Roboto-Regular/3966-webfont.woff2') format('woff2'),
+       url('../fonts/Roboto-Regular/3966-webfont.woff') format('woff'),
+       url('../fonts/Roboto-Regular/3966-webfont.ttf') format('truetype'),
+       url('../fonts/Roboto-Regular/3966-webfont.svg#robotoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url('../fonts/MyriadPro/MyriadPro-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamPro-Bold';
+  src: url('../fonts/Gotham-Bold/GothamPro-Bold.woff'),
+       url('../fonts/Gotham-Bold/GothamPro-Bold.eot'),
+       url('../fonts/Gotham-Bold/GothamPro-Bold.svg'),
+       url('../fonts/Gotham-Bold/GothamPro-Bold.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Book Regular';
+  src: url('../fonts/Gotham-Book/Gotham Book Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
