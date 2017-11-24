@@ -1,3 +1,15 @@
+/* 
+1. Blog-about-agency
+2. Blog-about-agency__footer
+3. Blog-news-area
+4. Blog-publicity
+5. Blog-publicity__footer
+6. Blog-key-features
+7. Blog-our-team
+8. Blog-contact-area
+9. Blog-contact-area__footer
+ */
+
 body {
   margin: 0;
   padding: 0;
@@ -13,26 +25,63 @@ a {
   text-decoration: none;
 }
 
-.large-caption_darker,
-.large-caption_lighter {
-  font: 247px 'robotobold_condensed';
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.large-caption {
+  font: 252px 'robotobold_condensed';
   text-align: center;
-  
+  color: rgba(226, 226, 226, .5);
+  line-height: 1;
+  position: relative;
+  margin-left: 11px;
 }
 
-.large-caption_darker {
-  color: #5993b2;
-  margin-top: 15px;
+.large-title_darker {
+  width: 100%;
+  font: 37px 'gotham_mediumregular';
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.large-caption_lighter {
-  color: #e2e2e2;
-  margin-top: 6px;
+.large-title_lighter {
+  width: 100%;
+  font: 37px 'gotham_mediumregular';
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.large-tagline {
+  font: 30px 'Gotham Book Regular';
+  color: #222;
+  text-align: center;
+}
+
+.large-tagline_two {
+  font: 30px 'Gotham Book Regular';
+  color: #222;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 12px;
 }
 
 
-/*Blog-about-agency===
-=============================*/
+/*1. Blog-about-agency
+==================================*/
 .blog-about-agency_wrapper {
   width: 1178px;
   margin: 0 auto;
@@ -42,6 +91,7 @@ a {
   margin: 0 auto;
   background: url("../design/about-img.jpg") no-repeat;
   background-size: cover;
+  padding-bottom: 101px;
 }
 
 .blog-about-agency__header {
@@ -50,14 +100,13 @@ a {
 }
 
 .blog-about-agency__header_line {
-  display: block;
   height: 1px;
   background-color: #717171;
 }
 
 .blog-about-agency__header-logo {
-  height: 79px;
-  width: 75px;
+  height: 76px;
+  width: 78px;
   float: left;
   background: url("../design/logo.png") center no-repeat;
   margin-left: 5px;
@@ -65,11 +114,10 @@ a {
 
 .blog-about-agency__menu {
   float: left;
-  margin: 30px 0 0 227px;
+  margin: 30px 0 0 222px;
 }
 
 .blog-about-agency__menu-item {
-  height: 58px;
   float: left;
   list-style: none;
 }
@@ -89,7 +137,7 @@ a {
 
 .blog-about-agency__social-networks {
   float: right;
-  margin-top: 30px;
+  margin-top: 32px;
 }
 
 .blog-about-agency__social-networks-instagram {
@@ -181,8 +229,6 @@ a {
 .blog-about-agency__scroll-down_arrow:after,
 .blog-about-agency__scroll-down_arrow:before {
   content: " ";
-  height: 0;
-  width: 0;
   position: absolute;
   top: 100%;
   left: 50%;
@@ -202,39 +248,25 @@ a {
 }
 
 
-/*Blog-about-agency__footer*/
+/*2. Blog-about-agency__footer*/
 .blog-about-agency__footer_wrapper {
   width: 1169px;
   margin: 0 auto;
 }
 
 .blog-about-agency__footer {
-  height: 738px;
   background-color: #11749e;
-  margin-top: 101px;
-}
-
-.blog-about-agency__footer-tagline {
-  font: 37px 'gotham_mediumregular';
-  text-align: center;
-  color: #fff;
-  text-transform: uppercase;
-  margin-top: -168px;
-  margin-left: 11px;
+  padding: 55px 0 126px 0;
 }
 
 .blog-about-agency__footer-news {
-  margin-top: 139px;
+  margin-left: -32px;
 }
 
 .blog-about-agency__footer-news-item {
   width: 265px;
   float: left;
-  margin-right: 35px;
-}
-
-.blog-about-agency__footer-news-item:last-child {
-  margin-right: 0;
+  margin: 38px 0 0 34px;
 }
 
 .blog-about-agency__footer-news-item_circle {
@@ -285,22 +317,45 @@ a {
 }
 
 
-/* Blog-news-area===
-============================= */
+/*3. Blog-news-area
+================================== */
 .blog-news-area_wrapper {
-  max-width: 1600px;
+  max-width: 1600px; 
+  margin: 0 auto;
+}
+
+.blog-news-area_wrapper-text {
+  width: 1167px;
   margin: 0 auto;
 }
 
 .blog-news-area__first {
-  height: 447px;
   background-color: #222;
 }
 
 .blog-news-area__second {
-  height: 474px;
   background-color: #f3f3f3;
 }
+
+.blog-news-area__first-img {
+  width: 800px;
+  height: 447px;
+  background-size: cover;
+  position: relative;
+  top: 0;
+  left: 50%;
+}
+
+.blog-news-area__second-img {
+  width: 800px;
+  height: 474px;
+  background-size: cover;
+  position: relative;
+  top: 0;
+  left: 50%;
+  margin-left: -800px;
+}
+
 
 .blog-news-area__first-text,
 .blog-news-area__second-text {
@@ -309,16 +364,20 @@ a {
   line-height: 1.9;
 }
 
+.paragraph {
+  margin-top: 25px;
+}
+
 .blog-news-area__first-text {
   float: left;
-  padding: 77px 110px 0 61px;
   color: #fff;
+  padding: 77px 110px 0 0;
 }
 
 .blog-news-area__second-text {
   float: right;
-  padding: 100px 100px 0 81px;
   color: #222;
+  padding: 100px 0 0 81px;
 }
 
 .blog-news-area__first-text_date,
@@ -345,24 +404,11 @@ a {
   margin-top: 32px;
 }
 
-.blog-news-area__first-img {
-  width: 50%;
-  height: 447px;
-  float: right;
-  background-size: cover;
-}
 
-.blog-news-area__second-img {
-  width: 50%;
-  height: 474px;
-  float: left;
-  background-size: cover;
-}
-
-/* Blog-publicity===
-============================== */
+/*4. Blog-publicity
+=================================== */
 .blog-publicity {
-  padding-bottom: 106px;
+  padding: 50px 0 106px 0;
 }
 
 .blog-publicity_wrapper {
@@ -370,31 +416,15 @@ a {
   margin: 0 auto;
 }
 
-.blog-publicity__title {
-  font: 37px 'gotham_mediumregular';
-  text-align: center;
-  color: #000;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin: -181px 0 0 20px;
-}
-
-.blog-publicity__tagline {
-  font: 30px 'Gotham Book Regular';
-  color: #222;
-  text-align: center;
-  margin-top: 104px;
-}
-
 .blog-publicity__news {
-  margin: 76px 0 0 2px;
+  margin: 46px 0 0 -30px;
 }
 
 .blog-publicity__news-item {
   width: 270px;
   float: left;
   text-align: center;
-  margin-right: 30px;
+  margin: 30px 0 0 30px;
 }
 
 .blog-publicity__news-item:last-child {
@@ -422,21 +452,23 @@ a {
   margin-top: 17px;
 }
 
-/* blog-publicity__footer */
+/*5. Blog-publicity__footer */
 .blog-publicity__footer {
-  height: 355px;
   background-color: #11749e;
-  box-sizing: border-box;
-  padding-top: 106px;
+  padding: 106px 0 109px 0;
 }
 
-.blog-publicity__footer-item_first {
+.blog-publicity__footer-item_left,
+.blog-publicity__footer-item_right {
   width: 554px;
+  margin-bottom: 20px;
+}
+
+.blog-publicity__footer-item_left {
   float: left;
 }
 
-.blog-publicity__footer-item_second {
-  width: 554px;
+.blog-publicity__footer-item_right {
   float: right;
 }
 
@@ -457,8 +489,8 @@ a {
   margin-left: 15px;
 }
 
-/* Blog-key-features===
-============================== */
+/*6. Blog-key-features
+=================================== */
 .blog-key-features {
   height: 848px;
   background: url("../design/blog-key-features.png") no-repeat center;
@@ -480,12 +512,12 @@ a {
 
 .blog-key-features__blog-text {
   font: 15px 'Gotham Book Regular';
-  line-height: 1.7;
+  line-height: 1.6;
   margin-top: 29px;
 }
 
 .blog-key-features__blog-list {
-  margin: 61px 0 0 -3px;
+  margin: 65px 0 0 -3px;
 }
 
 .blog-key-features__blog-list_item-one,
@@ -525,14 +557,14 @@ a {
   width: 390px;
   height: 647px;
   position: relative;
-  top: 100px;
-  left: 705px;
+  top: 99px;
+  left: 704px;
 }
 
-/* Blog-our-team===
-============================== */
+/*7. Blog-our-team
+=================================== */
 .blog-our-team {
-  padding-bottom: 77px;
+  padding: 24px 0 106px 0;
 }
 
 .large-caption_lighter-t {
@@ -542,16 +574,13 @@ a {
 }
 
 .blog-our-team__list {
-  margin-top: 76px;
+  margin-top: 40px;
+  margin-left: -30px;
 }
 
 .blog-our-team__item {
   float: left;
-  margin-right: 30px;
-}
-
-.blog-our-team__item:last-child {
-  margin-right: 0;
+  margin: 30px 0 0 30px;
 }
 
 .blog-our-team__item-img {
@@ -561,12 +590,11 @@ a {
 
 .blog-our-team__item_blog-text {
   width: 216px;
-  height: 88px;
   background-color: #fff;
   text-align: center;
   box-sizing: border-box;
-  padding-top: 17px;
-  margin: -47px 0 0 30px;
+  padding: 20px 0 0 7px;
+  margin: -49px 0 0 30px;
 }
 
 .blog-our-team__item_blog-name {
@@ -586,13 +614,15 @@ a {
   margin-top: 8px;
 }
 
-/* Blog-contact-area===
-============================== */
+/*8. Blog-contact-area
+=================================== */
 .blog-contact-area {
   height: 851px;
   background: url("../design/contact-area-background.jpg") no-repeat center;
   background-size: cover;
   margin: 0 auto;
+  padding-top: 103px;
+  box-sizing: border-box;
 }
 
 .blog-contact-area_wrapper {
@@ -600,118 +630,83 @@ a {
   margin: 0 auto;
 }
 
-.blog-contact-area-form {
-  margin-top: 40px;
+.blog-contact-area__form {
+  margin-top: 47px;
 }
 
-.field-name,
-.field-email,
-.field-phone {
-  width: 370px;
+.form-field {
   height: 48px;
+  width: 370px;
+  font: 15px 'Gotham Book Regular';
   border: 1px solid #fff;
-  margin-right: 24px;
-  float: left;
   background-color: transparent;
+  float: left;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  margin-right: 27px;
 }
 
-.field-phone {
+.form-field:last-of-type {
   margin-right: 0;
 }
 
-.field-message {
-  background-color: transparent;
-  border: 1px solid #fff;
-  width: 100%;
+.form-field-message {
   height: 150px;
+  width: 100%;
+  font-size: 16px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  resize: none;
   margin-top: 40px;
+  padding: 10px 24px;
 }
 
 .form-btn {
-  width: 227px;
-  height: 65px;
+  font: 24px 'gotham_mediumregular';
   background-color: #11749e;
+  color: #fff;
   text-transform: uppercase;
   border: 0;
-  font: 24px 'gotham_mediumregular';
+  cursor: pointer;
+  padding: 15px 70px 24px 62px;
+  margin: 40px 0 0 516px;
+  transition: background-color .2s;
+}
+
+.form-btn:hover {
+  background-color: #0b4055;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
   color: #fff;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.clearfix:after {
-  content: "";
-  display: block;
-  clear: both;
+.blog-contact-area__map {
+  height: 332px;
+  background: no-repeat center;
+  background-size: cover;
+  margin-top: 101px;
+}
+
+/*9. Blog-contact-area__footer */
+.blog-contact-arae__footer {
+  height: 114px;
+  background-color: #222;
+  color: #fff;
+}
+
+.blog-contact-area__footer-copyright {
+  font: 13px 'robotoregular';
+  float: left;
+  margin: 50px 0 0 5px;
+}
+
+.blog-contact-area__footer-developer {
+  font: 13px 'robotoregular';
+  float: right;
+  margin: 40px 3px 0 0;
 }
