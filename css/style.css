@@ -89,7 +89,7 @@ a {
 
 .blog-about-agency {
   margin: 0 auto;
-  background: url("../design/about-img.jpg") no-repeat;
+  background: url("../img/about-img.jpg") no-repeat;
   background-size: cover;
   padding-bottom: 101px;
 }
@@ -97,6 +97,18 @@ a {
 .blog-about-agency__header {
   height: 93px;
   padding-top: 22px;
+}
+
+.blog-about-agency__header_fixed {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(34, 34, 34, .9);
+  z-index: 100;
+}
+
+.blog-about-agency__header_blank {
+  height: 116px;
 }
 
 .blog-about-agency__header_line {
@@ -108,7 +120,7 @@ a {
   height: 76px;
   width: 78px;
   float: left;
-  background: url("../design/logo.png") center no-repeat;
+  background: url("../img/logo.png") center no-repeat;
   margin-left: 5px;
 }
 
@@ -131,8 +143,14 @@ a {
   transition: all .1s;
 }
 
-.blog-about-agency__menu-link:hover {
+.blog-about-agency__menu-link_active {
   border-bottom: 4px solid #11749e;
+  cursor: text;
+  color: #d1d1d1;
+}
+
+.blog-about-agency__menu-link:hover:not(.blog-about-agency__menu-link_active) {
+  color: #11749e;
 }
 
 .blog-about-agency__social-networks {
@@ -144,7 +162,7 @@ a {
   float: right;
   width: 17px;
   height: 18px;
-  background: url("../design/in.png") center no-repeat;
+  background: url("../img/in.png") center no-repeat;
   margin-left: 22px;
   cursor: pointer;
 }
@@ -153,7 +171,7 @@ a {
   float: right;
   width: 18px;
   height: 18px;
-  background: url("../design/skype.png") center no-repeat;
+  background: url("../img/skype.png") center no-repeat;
   margin-left: 26px;
   cursor: pointer;
 }
@@ -162,7 +180,7 @@ a {
   float: right;
   width: 15px;
   height: 18px;
-  background: url("../design/twitter.png") center no-repeat;
+  background: url("../img/twitter.png") center no-repeat;
   margin-left: 30px;
   cursor: pointer;
 }
@@ -171,7 +189,7 @@ a {
   float: right;
   width: 10px;
   height: 20px;
-  background: url("../design/facebook.png") center no-repeat;
+  background: url("../img/facebook.png") center no-repeat;
   cursor: pointer;
 }
 
@@ -493,7 +511,7 @@ a {
 =================================== */
 .blog-key-features {
   height: 848px;
-  background: url("../design/blog-key-features.png") no-repeat center;
+  background: url("../img/blog-key-features.png") no-repeat center;
   background-size: cover;
   margin: 0 auto;
 }
@@ -618,7 +636,7 @@ a {
 =================================== */
 .blog-contact-area {
   height: 851px;
-  background: url("../design/contact-area-background.jpg") no-repeat center;
+  background: url("../img/contact-area-background.jpg") no-repeat center;
   background-size: cover;
   margin: 0 auto;
   padding-top: 103px;
