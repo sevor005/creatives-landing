@@ -1,13 +1,13 @@
 /* 
-1. Blog-about-agency
-2. Blog-about-agency__footer
-3. Blog-news-area
-4. Blog-publicity
-5. Blog-publicity__footer
-6. Blog-key-features
-7. Blog-our-team
-8. Blog-contact-area
-9. Blog-contact-area__footer
+1. about-agency
+2. about-agency__footer
+3. news-area
+4. publicity
+5. publicity__footer
+6. key-features
+7. our-team
+8. contact-area
+9. contact-area__footer
  */
 
 body {
@@ -80,61 +80,61 @@ a {
 }
 
 
-/*1. Blog-about-agency
+/*1. About-agency
 ==================================*/
-.blog-about-agency_wrapper {
+.about-agency_wrapper {
   width: 1178px;
   margin: 0 auto;
 }
 
-.blog-about-agency {
+.about-agency {
   margin: 0 auto;
   background: url("../img/about-img.jpg") no-repeat;
   background-size: cover;
   padding-bottom: 101px;
 }
 
-.blog-about-agency__header {
+.about-agency__header {
   height: 93px;
   padding-top: 22px;
 }
 
-.blog-about-agency__header_fixed {
+.about-agency__header_fixed {
   width: 100%;
   position: fixed;
   top: 0;
-  background-color: rgba(34, 34, 34, .9);
+  background: url("../img/about-img.jpg") no-repeat;
+  background-size: cover;
   z-index: 100;
 }
 
-.blog-about-agency__header_blank {
+.about-agency__header_blank {
   height: 116px;
 }
 
-.blog-about-agency__header_line {
+.about-agency__header_line {
   height: 1px;
   background-color: #717171;
 }
 
-.blog-about-agency__header-logo {
+.about-agency__header-logo {
   height: 76px;
   width: 78px;
   float: left;
   background: url("../img/logo.png") center no-repeat;
-  margin-left: 5px;
 }
 
-.blog-about-agency__menu {
+.about-agency__menu {
   float: left;
   margin: 30px 0 0 222px;
 }
 
-.blog-about-agency__menu-item {
+.about-agency__menu-item {
   float: left;
   list-style: none;
 }
 
-.blog-about-agency__menu-link {
+.about-agency__menu-link {
   font: 20px 'MyriadPro-Regular';
   display: block;
   height: 58px;
@@ -143,22 +143,22 @@ a {
   transition: all .1s;
 }
 
-.blog-about-agency__menu-link_active {
+.about-agency__menu-link_active {
   border-bottom: 4px solid #11749e;
   cursor: text;
   color: #d1d1d1;
 }
 
-.blog-about-agency__menu-link:hover:not(.blog-about-agency__menu-link_active) {
+.about-agency__menu-link:hover:not(.blog-about-agency__menu-link_active) {
   color: #11749e;
 }
 
-.blog-about-agency__social-networks {
+.about-agency__social-networks {
   float: right;
   margin-top: 32px;
 }
 
-.blog-about-agency__social-networks-instagram {
+.about-agency__social-networks-instagram {
   float: right;
   width: 17px;
   height: 18px;
@@ -167,7 +167,7 @@ a {
   cursor: pointer;
 }
 
-.blog-about-agency__social-networks-skype {
+.about-agency__social-networks-skype {
   float: right;
   width: 18px;
   height: 18px;
@@ -176,7 +176,7 @@ a {
   cursor: pointer;
 }
 
-.blog-about-agency__social-networks-twitter {
+.about-agency__social-networks-twitter {
   float: right;
   width: 15px;
   height: 18px;
@@ -185,7 +185,7 @@ a {
   cursor: pointer;
 }
 
-.blog-about-agency__social-networks-facebook {
+.about-agency__social-networks-facebook {
   float: right;
   width: 10px;
   height: 20px;
@@ -194,7 +194,7 @@ a {
 }
 
 
-.blog-about-agency__title {
+.about-agency__title {
   font: bold 152px 'GothamPro-Bold';
   text-align: center;
   text-transform: uppercase;
@@ -203,7 +203,7 @@ a {
   margin-top: 242px;
 }
 
-.blog-about-agency__tagline {
+.about-agency__tagline {
   font: bold 24px 'gotham_mediumregular';
   text-align: center;
   text-transform: uppercase;
@@ -213,81 +213,61 @@ a {
 
 
 /* Scroll-down */
-.blog-about-agency__scroll-down {
+.about-agency__scroll-down {
   margin: 112px auto 0;
   width: 72px;
   height: 110px;
 }
 
-.blog-about-agency__scroll-down_text {
+.about-agency__scroll-down_text {
   font-family: 'Open sans';
   font-size: 13px;
   color: #fff;
 }
 
-.blog-about-agency__scroll-down_circle {
+.about-agency__scroll-down_circle {
   width: 63px;
   height: 63px;
   border-radius: 50%;
   border: 1px solid #fff;
-  margin-top: 19px;
+  margin: 19px auto 0;
   cursor: pointer;
   transition: border-color .1s;
 }
 
-.blog-about-agency__scroll-down_circle:hover {
+.about-agency__scroll-down_circle:hover {
   border-color: #757373;
 }
 
-.blog-about-agency__scroll-down_arrow {
-  position: relative;
-  margin: 27px 0 27px 18px;
+.about-agency__scroll-down_arrow {
+  width: 18px;
+  height: 13px;
+  background: url(../img/arrow.png) no-repeat center;
+  margin: 40% auto;
 }
 
-.blog-about-agency__scroll-down_arrow:after,
-.blog-about-agency__scroll-down_arrow:before {
-  content: " ";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  border: solid transparent;
-}
-  
-.blog-about-agency__scroll-down_arrow:after {
-  border-top-color: #2d2c2a;
-  border-width: 6px;
-  margin-left: -15px;
-}
-
-.blog-about-agency__scroll-down_arrow:before {
-  border-top-color: #fff;
-  border-width: 11px;
-  margin-left: -21px;
-}
-
-
-/*2. Blog-about-agency__footer*/
-.blog-about-agency__footer_wrapper {
+/*2. About-agency__footer*/
+.about-agency__footer_wrapper {
   width: 1169px;
   margin: 0 auto;
 }
 
-.blog-about-agency__footer {
+.about-agency__footer {
   background-color: #11749e;
   padding: 55px 0 126px 0;
 }
 
-.blog-about-agency__footer-news {
+.about-agency__footer-news {
   margin-left: -32px;
 }
 
-.blog-about-agency__footer-news-item {
+.about-agency__footer-news-item {
   width: 265px;
   float: left;
   margin: 38px 0 0 34px;
 }
 
-.blog-about-agency__footer-news-item_circle {
+.about-agency__footer-news-item_circle {
   width: 130px;
   height: 130px;
   border-radius: 50%;
@@ -297,29 +277,29 @@ a {
   box-sizing: border-box;
 }
 
-.blog-about-agency__footer-news-item_img,
-.blog-about-agency__footer-news-item_search,
-.blog-about-agency__footer-news-item_message {
+.about-agency__footer-news-item_img,
+.about-agency__footer-news-item_search,
+.about-agency__footer-news-item_message {
   background: no-repeat center;
   cursor: pointer;
 }
 
-.blog-about-agency__footer-news-item_img {
+.about-agency__footer-news-item_img {
   width: 34px;
   height: 35px;
 }
 
-.blog-about-agency__footer-news-item_search {
+.about-agency__footer-news-item_search {
   width: 34px;
   height: 35px;
 }
 
-.blog-about-agency__footer-news-item_message {
+.about-agency__footer-news-item_message {
   width: 30px;
   height: 34px;
 }
 
-.blog-about-agency__footer-news-item_header {
+.about-agency__footer-news-item_header {
   font: 18px 'gotham_mediumregular';
   text-align: center;
   text-transform: uppercase;
@@ -327,7 +307,7 @@ a {
   margin-top: 22px;
 }
 
-.blog-about-agency__footer-news-item_text {
+.about-agency__footer-news-item_text {
   font: 15px 'Gotham Book Regular';
   line-height: 1.56;
   color: #fff;
@@ -335,27 +315,27 @@ a {
 }
 
 
-/*3. Blog-news-area
+/*3. News-area
 ================================== */
-.blog-news-area_wrapper {
+.news-area_wrapper {
   max-width: 1600px; 
   margin: 0 auto;
 }
 
-.blog-news-area_wrapper-text {
+.news-area_wrapper-text {
   width: 1167px;
   margin: 0 auto;
 }
 
-.blog-news-area__first {
+.news-area__first {
   background-color: #222;
 }
 
-.blog-news-area__second {
+.news-area__second {
   background-color: #f3f3f3;
 }
 
-.blog-news-area__first-img {
+.news-area__first-img {
   width: 800px;
   height: 447px;
   background-size: cover;
@@ -364,7 +344,7 @@ a {
   left: 50%;
 }
 
-.blog-news-area__second-img {
+.news-area__second-img {
   width: 800px;
   height: 474px;
   background-size: cover;
@@ -375,8 +355,8 @@ a {
 }
 
 
-.blog-news-area__first-text,
-.blog-news-area__second-text {
+.news-area__first-text,
+.news-area__second-text {
   width: 50%;
   box-sizing: border-box;
   line-height: 1.9;
@@ -386,27 +366,27 @@ a {
   margin-top: 25px;
 }
 
-.blog-news-area__first-text {
+.news-area__first-text {
   float: left;
   color: #fff;
   padding: 77px 110px 0 0;
 }
 
-.blog-news-area__second-text {
+.news-area__second-text {
   float: right;
   color: #222;
   padding: 100px 0 0 81px;
 }
 
-.blog-news-area__first-text_date,
-.blog-news-area__second-text_date {
+.news-area__first-text_date,
+.news-area__second-text_date {
   font: 13px 'Gotham Book Regular';
   opacity: .9;
   line-height: 1.9;
 }
 
-.blog-news-area__first-text_title,
-.blog-news-area__second-text_title {
+.news-area__first-text_title,
+.news-area__second-text_title {
   font: 25px 'gotham_mediumregular';
   text-transform: uppercase;
   opacity: .9;
@@ -414,8 +394,8 @@ a {
 }
 
 
-.blog-news-area__first-text_content,
-.blog-news-area__second-text_content {
+.news-area__first-text_content,
+.news-area__second-text_content {
   font: 15px 'Gotham Book Regular';
   line-height: 1.65;
   opacity: .9;
@@ -423,74 +403,74 @@ a {
 }
 
 
-/*4. Blog-publicity
+/*4. Publicity
 =================================== */
-.blog-publicity {
+.publicity {
   padding: 50px 0 106px 0;
 }
 
-.blog-publicity_wrapper {
+.publicity_wrapper {
   width: 1172px;
   margin: 0 auto;
 }
 
-.blog-publicity__news {
+.publicity__news {
   margin: 46px 0 0 -30px;
 }
 
-.blog-publicity__news-item {
+.publicity__news-item {
   width: 270px;
   float: left;
   text-align: center;
   margin: 30px 0 0 30px;
 }
 
-.blog-publicity__news-item:last-child {
+.publicity__news-item:last-child {
   margin-right: 0;
 }
 
-.blog-publicity__news-item_img {
+.publicity__news-item_img {
   width: 270px;
   height: 280px;
   background: center no-repeat;
   background-size: cover;
 }
 
-.blog-publicity__news-item_header {
+.publicity__news-item_header {
   font: 18px 'gotham_mediumregular';
   color: #11749e;
   text-transform: uppercase;
   margin-top: 40px;
 }
 
-.blog-publicity__news-item_text {
+.publicity__news-item_text {
   font: 15px 'Gotham Book Regular';
   color: #222;
   line-height: 1.6;
   margin-top: 17px;
 }
 
-/*5. Blog-publicity__footer */
-.blog-publicity__footer {
+/*5. Publicity__footer */
+.publicity__footer {
   background-color: #11749e;
   padding: 106px 0 109px 0;
 }
 
-.blog-publicity__footer-item_left,
-.blog-publicity__footer-item_right {
+.publicity__footer-item_left,
+.publicity__footer-item_right {
   width: 554px;
   margin-bottom: 20px;
 }
 
-.blog-publicity__footer-item_left {
+.publicity__footer-item_left {
   float: left;
 }
 
-.blog-publicity__footer-item_right {
+.publicity__footer-item_right {
   float: right;
 }
 
-.blog-publicity__footer-item_img {
+.publicity__footer-item_img {
   width: 69px;
   height: 69px;
   float: left;
@@ -498,7 +478,7 @@ a {
   margin-top: 8px;
 }
 
-.blog-publicity__footer-item_text {
+.publicity__footer-item_text {
   width: 448px;
   float: right;
   font: 15px 'Gotham Book Regular';
@@ -507,40 +487,40 @@ a {
   margin-left: 15px;
 }
 
-/*6. Blog-key-features
+/*6. Key-features
 =================================== */
-.blog-key-features {
+.key-features {
   height: 848px;
   background: url("../img/blog-key-features.png") no-repeat center;
   background-size: cover;
   margin: 0 auto;
 }
 
-.blog-key-features__blog {
+.key-features__blog {
   width: 470px;
   float: left;
   margin: 224px 0 0 15px;
   color: #fff;
 }
 
-.blog-key-features__blog-header {
+.key-features__blog-header {
   font: 25px 'gotham_mediumregular';
   text-transform: uppercase;
 }
 
-.blog-key-features__blog-text {
+.key-features__blog-text {
   font: 15px 'Gotham Book Regular';
   line-height: 1.6;
   margin-top: 29px;
 }
 
-.blog-key-features__blog-list {
+.key-features__blog-list {
   margin: 65px 0 0 -3px;
 }
 
-.blog-key-features__blog-list_item-one,
-.blog-key-features__blog-list_item-two,
-.blog-key-features__blog-list_item-tree {
+.key-features__blog-list_item-one,
+.key-features__blog-list_item-two,
+.key-features__blog-list_item-tree {
   height: 38px;
   background-color: #11749e;
   box-sizing: border-box;
@@ -548,30 +528,30 @@ a {
   margin-top: 24px;
 }
 
-.blog-key-features__blog-list_item-one {
+.key-features__blog-list_item-one {
   width: 369px;
   margin-top: 0;
 }
 
-.blog-key-features__blog-list_item-two {
+.key-features__blog-list_item-two {
   width: 399px;
 }
 
-.blog-key-features__blog-list_item-tree {
+.key-features__blog-list_item-tree {
   width: 427px;
 }
 
-.blog-key-features__blog-list_link {
+.key-features__blog-list_link {
   font: 15px 'gotham_mediumregular';
   color: #fff;
   text-transform: uppercase;
 }
 
-.blog-key-features__blog-list_link:hover {
+.key-features__blog-list_link:hover {
   text-decoration: underline;
 }
 
-.blog-key-features__img {
+.key-features__img {
   width: 390px;
   height: 647px;
   position: relative;
@@ -579,9 +559,9 @@ a {
   left: 704px;
 }
 
-/*7. Blog-our-team
+/*7. Our-team
 =================================== */
-.blog-our-team {
+.our-team {
   padding: 24px 0 106px 0;
 }
 
@@ -591,22 +571,22 @@ a {
   color: #e2e2e2;
 }
 
-.blog-our-team__list {
+.our-team__list {
   margin-top: 40px;
   margin-left: -30px;
 }
 
-.blog-our-team__item {
+.our-team__item {
   float: left;
   margin: 30px 0 0 30px;
 }
 
-.blog-our-team__item-img {
+.our-team__item-img {
   width: 270px;
   height: 414px;
 }
 
-.blog-our-team__item_blog-text {
+.our-team__item_blog-text {
   width: 216px;
   background-color: #fff;
   text-align: center;
@@ -615,26 +595,26 @@ a {
   margin: -49px 0 0 30px;
 }
 
-.blog-our-team__item_blog-name {
+.our-team__item_blog-name {
   font: 20px 'gotham_mediumregular';
   color: #11749e;
   text-transform: uppercase;
   cursor: pointer;
 }
 
-.blog-our-team__item_blog-name:hover {
+.our-team__item_blog-name:hover {
   color: #0c4358;
 }
 
-.blog-our-team__item_blog-career {
+.our-team__item_blog-career {
   font: 15px 'gotham_mediumregular';
   color: #000;
   margin-top: 8px;
 }
 
-/*8. Blog-contact-area
+/*8. Contact-area
 =================================== */
-.blog-contact-area {
+.contact-area {
   height: 851px;
   background: url("../img/contact-area-background.jpg") no-repeat center;
   background-size: cover;
@@ -643,12 +623,12 @@ a {
   box-sizing: border-box;
 }
 
-.blog-contact-area_wrapper {
+.contact-area_wrapper {
   width: 1165px;
   margin: 0 auto;
 }
 
-.blog-contact-area__form {
+.contact-area__form {
   margin-top: 47px;
 }
 
@@ -703,27 +683,27 @@ textarea::-webkit-input-placeholder {
   color: #fff;
 }
 
-.blog-contact-area__map {
+.contact-area__map {
   height: 332px;
   background: no-repeat center;
   background-size: cover;
   margin-top: 101px;
 }
 
-/*9. Blog-contact-area__footer */
-.blog-contact-arae__footer {
+/*9. Contact-area__footer */
+.contact-arae__footer {
   height: 114px;
   background-color: #222;
   color: #fff;
 }
 
-.blog-contact-area__footer-copyright {
+.contact-area__footer-copyright {
   font: 13px 'robotoregular';
   float: left;
   margin: 50px 0 0 5px;
 }
 
-.blog-contact-area__footer-developer {
+.contact-area__footer-developer {
   font: 13px 'robotoregular';
   float: right;
   margin: 40px 3px 0 0;
