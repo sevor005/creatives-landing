@@ -106,16 +106,17 @@ a {
   background: url("../img/about-img.jpg") no-repeat;
   background-size: cover;
   z-index: 100;
+  border-bottom: 1px solid #717171;
 }
 
 .about-agency__header_blank {
   height: 116px;
 }
 
-.about-agency__header_line {
+/* .about-agency__header_line {
   height: 1px;
   background-color: #717171;
-}
+} */
 
 .about-agency__header-logo {
   height: 76px;
@@ -369,13 +370,13 @@ a {
 .news-area__first-text {
   float: left;
   color: #fff;
-  padding: 77px 110px 0 0;
+  padding: 77px 110px 0 59px;
 }
 
 .news-area__second-text {
   float: right;
   color: #222;
-  padding: 100px 0 0 81px;
+  padding: 100px 59px 0 81px;
 }
 
 .news-area__first-text_date,
