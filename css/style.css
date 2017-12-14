@@ -340,19 +340,21 @@ a {
   width: 800px;
   height: 447px;
   background-size: cover;
-  position: relative;
+  /* position: relative;
   top: 0;
-  left: 50%;
+  left: 50%; */
+  float: right;
 }
 
 .news-area__second-img {
   width: 800px;
   height: 474px;
   background-size: cover;
-  position: relative;
+  /* position: relative;
   top: 0;
   left: 50%;
-  margin-left: -800px;
+  margin-left: -800px; */
+  float: left;
 }
 
 
