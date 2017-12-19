@@ -82,11 +82,6 @@ a {
 
 /*1. About-agency
 ==================================*/
-.about-agency_wrapper {
-  width: 1178px;
-  margin: 0 auto;
-}
-
 .about-agency {
   margin: 0 auto;
   background: url("../img/about-img.jpg") no-repeat;
@@ -95,11 +90,17 @@ a {
 }
 
 .about-agency__header {
+  width: 1178px;
+  margin: 0 auto;
   height: 93px;
   padding-top: 22px;
 }
 
-.about-agency__header_fixed {
+.about-agency__header-line {
+  border-bottom: 1px solid #717171;
+}
+
+/* .about-agency__header_fixed {
   width: 100%;
   position: fixed;
   top: 0;
@@ -107,15 +108,10 @@ a {
   background-size: cover;
   z-index: 100;
   border-bottom: 1px solid #717171;
-}
+} */
 
-.about-agency__header_blank {
+/* .about-agency__header_blank {
   height: 116px;
-}
-
-/* .about-agency__header_line {
-  height: 1px;
-  background-color: #717171;
 } */
 
 .about-agency__header-logo {
@@ -212,21 +208,23 @@ a {
   letter-spacing: 17px;
 }
 
-
 /* Scroll-down */
 .about-agency__scroll-down {
   margin: 112px auto 0;
+}
+
+.scroll-down {
   width: 72px;
   height: 110px;
 }
 
-.about-agency__scroll-down_text {
-  font-family: 'Open sans';
+.scroll-down__text {
+  font-family: 'open_sansregular';
   font-size: 13px;
   color: #fff;
 }
 
-.about-agency__scroll-down_circle {
+.scroll-down__circle {
   width: 63px;
   height: 63px;
   border-radius: 50%;
@@ -236,11 +234,11 @@ a {
   transition: border-color .1s;
 }
 
-.about-agency__scroll-down_circle:hover {
+.scroll-down__circle:hover {
   border-color: #757373;
 }
 
-.about-agency__scroll-down_arrow {
+.scroll-down__arrow {
   width: 18px;
   height: 13px;
   background: url(../img/arrow.png) no-repeat center;
@@ -248,7 +246,7 @@ a {
 }
 
 /*2. About-agency__footer*/
-.about-agency__footer_wrapper {
+.about-agency__footer-wrapper {
   width: 1169px;
   margin: 0 auto;
 }
@@ -337,7 +335,7 @@ a {
 }
 
 .news-area__first-img {
-  width: 800px;
+  width: 50%;
   height: 447px;
   background-size: cover;
   /* position: relative;
@@ -347,7 +345,7 @@ a {
 }
 
 .news-area__second-img {
-  width: 800px;
+  width: 50%;
   height: 474px;
   background-size: cover;
   /* position: relative;
