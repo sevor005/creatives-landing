@@ -31,8 +31,49 @@ a {
   clear: both;
 }
 
+
+
+
+
+
+
+.section-header {
+  text-align: center;
+}
+
+.section-header__caption {
+  font: 252px 'robotobold_condensed';
+  color: rgba(226, 226, 226, .5);
+  line-height: 1;
+  position: relative;
+}
+
+.section-tagline {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section-tagline__title {
+  width: 100%;
+  font: 37px 'gotham_mediumregular';
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
 .large-caption {
-  margin-left: 11px;
   text-align: center;
 }
 
@@ -259,13 +300,12 @@ a {
 .about-agency__feature {
   background-color: #11749e;
   padding: 55px 0 126px 0;
-  margin: 0 auto;
-  max-width: 1600px;
 }
 
 .about-agency__feature-news {
   text-align: center;
-  margin-left: 20px;
+  margin: 0 auto;
+  max-width: 1600px;
 }
 
 .feature-item {
