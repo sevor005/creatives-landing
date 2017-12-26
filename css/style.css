@@ -31,12 +31,19 @@ a {
   clear: both;
 }
 
-.section-header__letter {
+.section-header {
+  position: relative;
+  height: 252px;
+}
+
+.section-header__title {
   font: 252px 'robotobold_condensed';
   color: rgba(226, 226, 226, .5);
   line-height: 1;
-  position: relative;
-  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .section-header__text {
@@ -505,9 +512,9 @@ a {
   margin: 65px 0 0 -3px;
 }
 
-.blog-list__item-one,
-.blog-list__item-two,
-.blog-list__item-tree {
+.blog-list-item,
+.blog-list-item,
+.blog-list-item {
   height: 38px;
   background-color: #11749e;
   box-sizing: border-box;
