@@ -1,13 +1,13 @@
   /*
 1. about-agency
-2. about-agency__footer
-3. news-area
+2. feature
+3. article
 4. publicity
-5. publicity__footer
+5. notes
 6. key-features
-7. our-team
-8. contact-area
-9. contact-area__footer
+7. team
+8. contacts
+9.  footer
  */
 
 body {
@@ -25,18 +25,12 @@ a {
   text-decoration: none;
 }
 
-.clearfix:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.section-header {
+.letter-header {
   position: relative;
-  height: 252px;
+  min-height: 252px;
 }
 
-.section-header__title {
+.letter-header__title {
   font: 252px 'robotobold_condensed';
   color: rgba(226, 226, 226, .5);
   line-height: 1;
@@ -46,7 +40,7 @@ a {
   transform: translate(-50%, -50%);
 }
 
-.section-header__text {
+.letter-header__text {
   width: 100%;
   font: 37px 'gotham_mediumregular';
   text-align: center;
@@ -59,28 +53,19 @@ a {
   transform: translate(-50%, -50%);
 }
 
-.section-header__text_light {
+.letter-header__text_light {
   color: #fff;
 }
 
-.section-header__text_dark {
+.letter-header__text_dark {
   color: #000;
 }
 
-.publicity-tagline__large-tagline {
+.section-header__tagline {
   font: 30px 'Gotham Book Regular';
   color: #222;
   text-align: center;
 }
-
-.large-tagline-two {
-  font: 30px 'Gotham Book Regular';
-  color: #222;
-  text-align: center;
-  margin-top: 30px;
-  margin-left: 12px;
-}
-
 
 /*1. About-agency
 ==================================*/
@@ -92,29 +77,18 @@ a {
 }
 
 .about-agency__header {
+  border-bottom: 1px solid #717171;
+}
+
+.about-agency__header-container {
   width: 1178px;
   margin: 0 auto;
   height: 93px;
   padding-top: 22px;
+  content: "";
+  display: block;
+  clear: both;
 }
-
-.about-agency__header-line {
-  border-bottom: 1px solid #717171;
-}
-
-/* .about-agency__header_fixed {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  background: url("../img/about-img.jpg") no-repeat;
-  background-size: cover;
-  z-index: 100;
-  border-bottom: 1px solid #717171;
-} */
-
-/* .about-agency__header_blank {
-  height: 116px;
-} */
 
 .about-agency__header-logo {
   height: 76px;
@@ -251,29 +225,35 @@ a {
   transform: translate(-50%, -50%);
 }
 
-/*2. About-agency__feature*/
-.about-agency__feature {
+/*2. Feature */
+.features {
   background-color: #11749e;
   padding: 55px 0 126px 0;
 }
 
-.about-agency__feature-news {
+.features-list {
   text-align: center;
   margin: 0 auto;
   max-width: 1600px;
 }
 
-.feature-item {
+.features-list:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.features-item {
   width: 265px;
-  display: inline-block;
   text-align: center;
 }
 
-.about-agency__news-item {
+.features__item {
   margin: 38px 34px 0 0;
+  display: inline-block;
 }
 
-.feature-item__circle {
+.features-item__circle {
   width: 130px;
   height: 130px;
   border-radius: 50%;
@@ -283,29 +263,29 @@ a {
   box-sizing: border-box;
 }
 
-.feature-item__img,
-.feature-item__search,
-.feature-item__message {
+.features-item__img,
+.features-item__search,
+.features-item__message {
   background: no-repeat center;
   cursor: pointer;
 }
 
-.feature-item__img {
+.features-item__img {
   width: 34px;
   height: 35px;
 }
 
-.feature-item__search {
+.features-item__search {
   width: 34px;
   height: 35px;
 }
 
-.feature-item__message {
+.features-item__message {
   width: 30px;
   height: 34px;
 }
 
-.feature-item__header {
+.features-item__header {
   font: 18px 'gotham_mediumregular';
   text-align: center;
   text-transform: uppercase;
@@ -313,110 +293,135 @@ a {
   margin-top: 22px;
 }
 
-.feature-item__text {
+.features-item__text {
   font: 15px 'Gotham Book Regular';
   line-height: 1.56;
   color: #fff;
   margin-top: 26px;
 }
 
-/*3. News-area
-================================== */
-.news-area_wrapper {
-  max-width: 1600px; 
-  margin: 0 auto;
-}
-
-.news-area__first {
+/* 3.Article */
+.article {
   background-color: #222;
 }
 
-.news-area__second {
-  background-color: #f3f3f3;
+.article__container {
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
-.first-line__img {
-  width: 50%;
-  height: 447px;
-  background-size: cover;
-  float: right;
+.article:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
-.second-line__img {
-  width: 50%;
-  height: 474px;
-  background-size: cover;
-  float: left;
-}
-
-
-.first-line__text,
-.second-line__text {
+.article__text {
   width: 50%;
   box-sizing: border-box;
   line-height: 1.9;
-}
-
-.paragraph {
-  margin-top: 25px;
-}
-
-.first-line__text {
   float: left;
   color: #fff;
-  padding: 77px 110px 0 59px;
+  padding: 77px 110px 0 153px;
 }
 
-.second-line__text {
-  float: right;
-  color: #222;
-  padding: 100px 59px 0 81px;
-}
-
-.first-line__text-date,
-.second-line__text-date {
+.article__text-date {
   font: 13px 'Gotham Book Regular';
   opacity: .9;
   line-height: 1.9;
 }
 
-.first-line__text-title,
-.second-line__text-title {
+.article__text-title {
   font: 25px 'gotham_mediumregular';
   text-transform: uppercase;
   opacity: .9;
   margin-top: 8px;
 }
 
-
-.first-line__text-content,
-.second-line__text-content {
+.article__text-content {
   font: 15px 'Gotham Book Regular';
   line-height: 1.65;
   opacity: .9;
   margin-top: 32px;
 }
 
+.paragraph {
+  margin-top: 25px;
+}
+
+.article__img {
+  width: 50%;
+  height: 447px;
+  background-size: cover;
+  float: right;
+}
+
+.article_reverse {
+  background-color: #f3f3f3;
+}
+
+.article__text_reverse {
+  float: right;
+  color: #222;
+  padding: 100px 252px 0 57px;
+}
+
+.article__img_reverse {
+  width: 50%;
+  height: 474px;
+  background-size: cover;
+  float: left;
+}
+
+@media screen and (max-width: 1440px) {
+  .article__text {
+    padding: 77px 110px 0 104px;
+  }
+  .article__text_reverse {
+    padding: 100px 252px 0 104px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .article__text {
+    padding: 77px 110px 0 72px;
+  }
+  .article__text_reverse {
+    padding: 100px 252px 0 72px;
+  }
+}
 
 /*4. Publicity
 =================================== */
 .publicity {
   padding: 50px 0 106px 0;
-}
-
-.publicity__wrapper {
   width: 1172px;
   margin: 0 auto;
 }
 
-.publicity__block-news {
+.publicity:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.publicity__news {
   margin: 46px 0 0 -30px;
 }
 
-.block-news__item {
+.publicity-news:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.news-item {
   width: 270px;
-  float: left;
   text-align: center;
+}
+
+.publicity__news-item {
+  float: left;
   margin: 30px 0 0 30px;
 }
 
@@ -424,47 +429,65 @@ a {
   margin-right: 0;
 }
 
-.block-news__item-img {
+.news-item__img {
   width: 270px;
   height: 280px;
   background: center no-repeat;
   background-size: cover;
 }
 
-.block-news__item-header {
+.news-item__header {
   font: 18px 'gotham_mediumregular';
   color: #11749e;
   text-transform: uppercase;
   margin-top: 40px;
 }
 
-.block-news__item-text {
+.news-item__text {
   font: 15px 'Gotham Book Regular';
   color: #222;
   line-height: 1.6;
   margin-top: 17px;
 }
 
-/*5. Publicity__footer */
-.publicity__footer {
+/*5. Notes */
+.notes {
   background-color: #11749e;
+}
+
+.notes__container {
   padding: 106px 0 109px 0;
+  width: 1172px;
+  margin: 0 auto;
 }
 
-.publicity-item {
+.notes__container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.notes-item {
   width: 554px;
-  margin-bottom: 20px;
 }
 
-.publicity__footer-left {
+.notes__item {
   float: left;
+  margin-bottom: 20px;
+  margin-right: 59px;
 }
 
-.publicity__footer-right {
-  float: right;
+.notes-item:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
-.publicity-item__img {
+.notes__item:last-child {
+  margin-right: 0;
+}
+
+.notes-item__img {
   width: 69px;
   height: 69px;
   float: left;
@@ -472,7 +495,7 @@ a {
   margin-top: 8px;
 }
 
-.publicity-item__text {
+.notes-item__text {
   width: 448px;
   float: right;
   font: 15px 'Gotham Book Regular';
@@ -487,101 +510,118 @@ a {
   height: 848px;
   background: url("../img/blog-key-features.png") no-repeat center;
   background-size: cover;
-  margin: 0 auto;
 }
 
-.key-features__blog {
+.key-features__container {
+  width: 1172px;
+  margin: 0 auto;
+  padding-bottom: 150px;
+  background: url("../img/blog-key-features_tel.png") no-repeat;
+  background-position: 700px 100px;
+}
+
+.key-features__container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.key-features__content {
   width: 470px;
   float: left;
   margin: 224px 0 0 15px;
   color: #fff;
 }
 
-.key-features__blog-header {
+.key-features__content-header {
   font: 25px 'gotham_mediumregular';
   text-transform: uppercase;
 }
 
-.key-features__blog-text {
+.key-features__content-text {
   font: 15px 'Gotham Book Regular';
   line-height: 1.6;
   margin-top: 29px;
 }
 
-.key-features__blog-list {
+.key-features__buttons {
   margin: 65px 0 0 -3px;
 }
 
-.blog-list-item,
-.blog-list-item,
-.blog-list-item {
+.button-group__item {
+  margin-top: 24px;
+}
+
+.button  {
+  width: 369px;
   height: 38px;
   background-color: #11749e;
   box-sizing: border-box;
   padding: 10px 18px;
-  margin-top: 24px;
 }
 
-.blog-list__item-one {
-  width: 369px;
+.button_level_one {
   margin-top: 0;
 }
 
-.blog-list__item-two {
+.button_level_two {
   width: 399px;
 }
 
-.blog-list__item-tree {
+.button_level_three {
   width: 427px;
 }
 
-.blog-list__link {
+
+.button__link {
   font: 15px 'gotham_mediumregular';
   color: #fff;
   text-transform: uppercase;
 }
 
-.blog-list__link:hover {
+.button__link:hover {
   text-decoration: underline;
 }
 
-.blog-list__img {
-  width: 390px;
-  height: 647px;
-  position: relative;
-  top: 99px;
-  left: 704px;
-}
-
-/*7. Our-team
+/*7. Team
 =================================== */
-.our-team {
+.team {
   padding: 24px 0 106px 0;
 }
 
+.team__container {
+  width: 1172px;
+  margin: 0 auto;
+}
 .large-caption_lighter-t {
   font: 247px 'robotobold_condensed';
   text-align: center;
   color: #e2e2e2;
 }
 
-.our-team__list {
+.team__list {
   margin-left: -30px;
   margin-top: 40px;
 }
 
-.team-list__item {
+.team__list:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.team__item {
   margin-top: 40px;
   float: left;
   margin: 30px 0 0 30px;
 }
 
-.team-list__item-img {
+.team-item__img {
   width: 270px;
   height: 414px;
 }
 
-.team-list__item-text {
+.team-item__text {
   width: 216px;
   background-color: #fff;
   text-align: center;
@@ -590,27 +630,26 @@ a {
   margin: -49px 0 0 30px;
 }
 
-.team-list__item-name {
+.team-item__name {
   font: 20px 'gotham_mediumregular';
   color: #11749e;
   text-transform: uppercase;
   cursor: pointer;
 }
 
-.team-list__item-name:hover {
+.team-item__name:hover {
   color: #0c4358;
 }
 
-.team-list__item-career {
+.team-item__career {
   font: 15px 'gotham_mediumregular';
   color: #000;
   margin-top: 8px;
 }
 
-/*8. Contact-area
+/*8. Contacts
 =================================== */
-.contact-area {
-  height: 851px;
+.contacts {
   background: url("../img/contact-area-background.jpg") no-repeat center;
   background-size: cover;
   margin: 0 auto;
@@ -618,16 +657,22 @@ a {
   box-sizing: border-box;
 }
 
-.contact-area__wrapper {
+.contacts__container {
   width: 1165px;
   margin: 0 auto;
 }
 
-.contact-area__form {
+.contacts__form {
   margin-top: 47px;
 }
 
-.contact-form__field {
+.contacts-form__row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.contacts-form__field {
   height: 48px;
   width: 370px;
   font: 15px 'Gotham Book Regular';
@@ -640,24 +685,23 @@ a {
   margin-right: 27px;
 }
 
-.contact-form__field:last-of-type {
+.contacts-form__field:last-of-type {
   margin-right: 0;
 }
 
-.contact-form__message {
+.contacts-form__field_multyline {
   height: 150px;
-  width: 100%;
-  font-size: 16px;
-  background-color: transparent;
-  color: #fff;
-  border: 1px solid #fff;
-  box-sizing: border-box;
   resize: none;
   margin-top: 40px;
   padding: 10px 24px;
 }
 
-.contact-form__btn {
+.contacts-form__field_wide {
+  width: 100%;
+}
+
+.contacts-form__btn {
+  display: block;
   font: 24px 'gotham_mediumregular';
   background-color: #11749e;
   color: #fff;
@@ -665,11 +709,11 @@ a {
   border: 0;
   cursor: pointer;
   padding: 15px 70px 24px 62px;
-  margin: 40px 0 0 516px;
+  margin: 40px auto 0;
   transition: background-color .2s;
 }
 
-.contact-form__btn:hover {
+.contacts-form__btn:hover {
   background-color: #0b4055;
 }
 
@@ -678,27 +722,32 @@ textarea::-webkit-input-placeholder {
   color: #fff;
 }
 
-.contact-area__map {
+.contacts__map {
   height: 332px;
   background: no-repeat center;
   background-size: cover;
   margin-top: 101px;
 }
 
-/*9. Contact-area__footer */
-.contact-arae__footer {
+/*9. footer */
+.footer {
   height: 114px;
   background-color: #222;
   color: #fff;
 }
 
-.contact-area__footer-copyright {
+.footer__container {
+  width: 1165px;
+  margin: 0 auto;
+}
+
+.footer__copyright {
   font: 13px 'robotoregular';
   float: left;
   margin: 50px 0 0 5px;
 }
 
-.contact-area__footer-developer {
+.footer__developer {
   font: 13px 'robotoregular';
   float: right;
   margin: 40px 3px 0 0;
