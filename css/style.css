@@ -122,7 +122,7 @@ a {
   color: #d1d1d1;
 }
 
-.about-agency__menu-link:hover:not(.blog-about-agency__menu-link_active) {
+.about-agency__menu-link:hover:not(.about-agency__menu-link_active) {
   color: #11749e;
 }
 
@@ -218,7 +218,7 @@ a {
 .scroll-down__arrow {
   width: 18px;
   height: 13px;
-  background: url(../img/arrow.png) no-repeat center;
+  background: url("../img/arrow.png") no-repeat center;
   position: absolute;
   top: 50%;
   left: 50%;
